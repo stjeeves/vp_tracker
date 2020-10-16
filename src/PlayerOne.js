@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./styles.css";
 
 class PlayerOne extends Component {
   constructor(props) {
@@ -98,13 +99,21 @@ class PlayerOne extends Component {
   //Primary VP functions
   addPrimaryVPs1() {
     this.setState((prevState) => {
-      return { primary1: prevState.primary1 + 5, total1: prevState.total1 + 5 };
+      if (prevState.primary1 >= 0)
+        return {
+          primary1: prevState.primary1 + 5,
+          total1: prevState.total1 + 5,
+        };
     });
   }
 
   removePrimaryVPs1() {
     this.setState((prevState) => {
-      return { primary1: prevState.primary1 - 5, total1: prevState.total1 - 5 };
+      if (prevState.primary1 > 0)
+        return {
+          primary1: prevState.primary1 - 5,
+          total1: prevState.total1 - 5,
+        };
     });
   }
 
@@ -159,328 +168,485 @@ class PlayerOne extends Component {
   //Secondary A functions
   addSecondaryVPsA1() {
     this.setState((prevState) => {
-      return { secondaryA1: prevState.secondaryA1 + 1 };
+      return {
+        secondaryA1: prevState.secondaryA1 + 1,
+        total1: prevState.total1 + 1,
+      };
     });
   }
 
   removeSecondaryVPsA1() {
     this.setState((prevState) => {
-      return { secondaryA1: prevState.secondaryA1 - 1 };
+      return {
+        secondaryA1: prevState.secondaryA1 - 1,
+        total1: prevState.total1 - 1,
+      };
     });
   }
 
   addSecondaryVPsA2() {
     this.setState((prevState) => {
-      return { secondaryA2: prevState.secondaryA2 + 1 };
+      return {
+        secondaryA2: prevState.secondaryA2 + 1,
+        total2: prevState.total2 + 1,
+      };
     });
   }
 
   removeSecondaryVPsA2() {
     this.setState((prevState) => {
-      return { secondaryA2: prevState.secondaryA2 - 1 };
+      return {
+        secondaryA2: prevState.secondaryA2 - 1,
+        total2: prevState.total2 - 1,
+      };
     });
   }
 
   addSecondaryVPsA3() {
     this.setState((prevState) => {
-      return { secondaryA3: prevState.secondaryA3 + 1 };
+      return {
+        secondaryA3: prevState.secondaryA3 + 1,
+        total3: prevState.total3 + 1,
+      };
     });
   }
 
   removeSecondaryVPsA3() {
     this.setState((prevState) => {
-      return { secondaryA3: prevState.secondaryA3 - 1 };
+      return {
+        secondaryA3: prevState.secondaryA3 - 1,
+        total3: prevState.total3 - 1,
+      };
     });
   }
 
   addSecondaryVPsA4() {
     this.setState((prevState) => {
-      return { secondaryA4: prevState.secondaryA4 + 1 };
+      return {
+        secondaryA4: prevState.secondaryA4 + 1,
+        total4: prevState.total4 + 1,
+      };
     });
   }
 
   removeSecondaryVPsA4() {
     this.setState((prevState) => {
-      return { secondaryA4: prevState.secondaryA4 - 1 };
+      return {
+        secondaryA4: prevState.secondaryA4 - 1,
+        total4: prevState.total4 - 1,
+      };
     });
   }
 
   addSecondaryVPsA5() {
     this.setState((prevState) => {
-      return { secondaryA5: prevState.secondaryA5 + 1 };
+      return {
+        secondaryA5: prevState.secondaryA5 + 1,
+        total5: prevState.total5 + 1,
+      };
     });
   }
 
   removeSecondaryVPsA5() {
     this.setState((prevState) => {
-      return { secondaryA5: prevState.secondaryA5 - 1 };
+      return {
+        secondaryA5: prevState.secondaryA5 - 1,
+        total5: prevState.total5 - 1,
+      };
     });
   }
 
   //Secondary B functions
   addSecondaryVPsB1() {
     this.setState((prevState) => {
-      return { secondaryB1: prevState.secondaryB1 + 1 };
+      return {
+        secondaryB1: prevState.secondaryB1 + 1,
+        total1: prevState.total1 + 1,
+      };
     });
   }
 
   removeSecondaryVPsB1() {
     this.setState((prevState) => {
-      return { secondaryB1: prevState.secondaryB1 - 1 };
+      return {
+        secondaryB1: prevState.secondaryB1 - 1,
+        total1: prevState.total1 - 1,
+      };
     });
   }
 
   addSecondaryVPsB2() {
     this.setState((prevState) => {
-      return { secondaryB2: prevState.secondaryB2 + 1 };
+      return {
+        secondaryB2: prevState.secondaryB2 + 1,
+        total2: prevState.total2 + 1,
+      };
     });
   }
 
   removeSecondaryVPsB2() {
     this.setState((prevState) => {
-      return { secondaryB2: prevState.secondaryB2 - 1 };
+      return {
+        secondaryB2: prevState.secondaryB2 - 1,
+        total2: prevState.total2 - 1,
+      };
     });
   }
 
   addSecondaryVPsB3() {
     this.setState((prevState) => {
-      return { secondaryB3: prevState.secondaryB3 + 1 };
+      return {
+        secondaryB3: prevState.secondaryB3 + 1,
+        total3: prevState.total3 + 1,
+      };
     });
   }
 
   removeSecondaryVPsB3() {
     this.setState((prevState) => {
-      return { secondaryB3: prevState.secondaryB3 - 1 };
+      return {
+        secondaryB3: prevState.secondaryB3 - 1,
+        total3: prevState.total3 - 1,
+      };
     });
   }
 
   addSecondaryVPsB4() {
     this.setState((prevState) => {
-      return { secondaryB4: prevState.secondaryB4 + 1 };
+      return {
+        secondaryB4: prevState.secondaryB4 + 1,
+        total4: prevState.total4 + 1,
+      };
     });
   }
 
   removeSecondaryVPsB4() {
     this.setState((prevState) => {
-      return { secondaryB4: prevState.secondaryB4 - 1 };
+      return {
+        secondaryB4: prevState.secondaryB4 - 1,
+        total4: prevState.total4 - 1,
+      };
     });
   }
 
   addSecondaryVPsB5() {
     this.setState((prevState) => {
-      return { secondaryB5: prevState.secondaryB5 + 1 };
+      return {
+        secondaryB5: prevState.secondaryB5 + 1,
+        total5: prevState.total5 + 1,
+      };
     });
   }
 
   removeSecondaryVPsB5() {
     this.setState((prevState) => {
-      return { secondaryB5: prevState.secondaryB5 - 1 };
+      return {
+        secondaryB5: prevState.secondaryB5 - 1,
+        total5: prevState.total5 - 1,
+      };
     });
   }
 
   //Secondary C functions
   addSecondaryVPsC1() {
     this.setState((prevState) => {
-      return { secondaryC1: prevState.secondaryC1 + 1 };
+      return {
+        secondaryC1: prevState.secondaryC1 + 1,
+        total1: prevState.total1 + 1,
+      };
     });
   }
 
   removeSecondaryVPsC1() {
     this.setState((prevState) => {
-      return { secondaryC1: prevState.secondaryC1 - 1 };
+      return {
+        secondaryC1: prevState.secondaryC1 - 1,
+        total1: prevState.total1 - 1,
+      };
     });
   }
 
   addSecondaryVPsC2() {
     this.setState((prevState) => {
-      return { secondaryC2: prevState.secondaryC2 + 1 };
+      return {
+        secondaryC2: prevState.secondaryC2 + 1,
+        total2: prevState.total2 + 1,
+      };
     });
   }
 
   removeSecondaryVPsC2() {
     this.setState((prevState) => {
-      return { secondaryC2: prevState.secondaryC2 - 1 };
+      return {
+        secondaryC2: prevState.secondaryC2 - 1,
+        total2: prevState.total2 - 1,
+      };
     });
   }
 
   addSecondaryVPsC3() {
     this.setState((prevState) => {
-      return { secondaryC3: prevState.secondaryC3 + 1 };
+      return {
+        secondaryC3: prevState.secondaryC3 + 1,
+        total3: prevState.total3 + 1,
+      };
     });
   }
 
   removeSecondaryVPsC3() {
     this.setState((prevState) => {
-      return { secondaryC3: prevState.secondaryC3 - 1 };
+      return {
+        secondaryC3: prevState.secondaryC3 - 1,
+        total3: prevState.total3 - 1,
+      };
     });
   }
 
   addSecondaryVPsC4() {
     this.setState((prevState) => {
-      return { secondaryC4: prevState.secondaryC4 + 1 };
+      return {
+        secondaryC4: prevState.secondaryC4 + 1,
+        total4: prevState.total4 + 1,
+      };
     });
   }
 
   removeSecondaryVPsC4() {
     this.setState((prevState) => {
-      return { secondaryC4: prevState.secondaryC4 - 1 };
+      return {
+        secondaryC4: prevState.secondaryC4 - 1,
+        total4: prevState.total4 - 1,
+      };
     });
   }
 
   addSecondaryVPsC5() {
     this.setState((prevState) => {
-      return { secondaryC5: prevState.secondaryC5 + 1 };
+      return {
+        secondaryC5: prevState.secondaryC5 + 1,
+        total5: prevState.total5 + 1,
+      };
     });
   }
 
   removeSecondaryVPsC5() {
     this.setState((prevState) => {
-      return { secondaryC5: prevState.secondaryC5 - 1 };
+      return {
+        secondaryC5: prevState.secondaryC5 - 1,
+        total5: prevState.total5 - 1,
+      };
     });
-  }
-
-  addTotal1() {
-    if (this.primary1 > 0) {
-      this.total1 += this.primary1;
-    }
   }
 
   render() {
     return (
-      <div>
-        <h2>Player One</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Turn 1</td>
-              <td>Turn 2</td>
-              <td>Turn 3</td>
-              <td>Turn 4</td>
-              <td>Turn 5</td>
-            </tr>
-            <tr>
-              <td>Primary</td>
-              <td>
-                {this.state.primary1}{" "}
-                <button onClick={this.addPrimaryVPs1}>+</button>
-                <button onClick={this.removePrimaryVPs1}>-</button>
-              </td>
-              <td>
-                {this.state.primary2}{" "}
-                <button onClick={this.addPrimaryVPs2}>+</button>
-                <button onClick={this.removePrimaryVPs2}>-</button>
-              </td>
-              <td>
-                {this.state.primary3}{" "}
-                <button onClick={this.addPrimaryVPs3}>+</button>
-                <button onClick={this.removePrimaryVPs3}>-</button>
-              </td>
-              <td>
-                {this.state.primary4}{" "}
-                <button onClick={this.addPrimaryVPs4}>+</button>
-                <button onClick={this.removePrimaryVPs4}>-</button>
-              </td>
-              <td>
-                {this.state.primary5}{" "}
-                <button onClick={this.addPrimaryVPs5}>+</button>
-                <button onClick={this.removePrimaryVPs5}>-</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Secondary 1</td>
-              <td>
-                {this.state.secondaryA1}{" "}
-                <button onClick={this.addSecondaryVPsA1}>+</button>
-                <button onClick={this.removeSecondaryVPsA1}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryA2}{" "}
-                <button onClick={this.addSecondaryVPsA2}>+</button>
-                <button onClick={this.removeSecondaryVPsA2}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryA3}{" "}
-                <button onClick={this.addSecondaryVPsA3}>+</button>
-                <button onClick={this.removeSecondaryVPsA3}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryA4}{" "}
-                <button onClick={this.addSecondaryVPsA4}>+</button>
-                <button onClick={this.removeSecondaryVPsA4}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryA5}{" "}
-                <button onClick={this.addSecondaryVPsA5}>+</button>
-                <button onClick={this.removeSecondaryVPsA5}>-</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Secondary 2</td>
-              <td>
-                {this.state.secondaryB1}{" "}
-                <button onClick={this.addSecondaryVPsB1}>+</button>
-                <button onClick={this.removeSecondaryVPsB1}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryB2}{" "}
-                <button onClick={this.addSecondaryVPsB2}>+</button>
-                <button onClick={this.removeSecondaryVPsB2}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryB3}{" "}
-                <button onClick={this.addSecondaryVPsB3}>+</button>
-                <button onClick={this.removeSecondaryVPsB3}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryB4}{" "}
-                <button onClick={this.addSecondaryVPsB4}>+</button>
-                <button onClick={this.removeSecondaryVPsB4}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryB5}{" "}
-                <button onClick={this.addSecondaryVPsB5}>+</button>
-                <button onClick={this.removeSecondaryVPsB5}>-</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Secondary 3</td>
-              <td>
-                {this.state.secondaryC1}{" "}
-                <button onClick={this.addSecondaryVPsC1}>+</button>
-                <button onClick={this.removeSecondaryVPsC1}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryC2}{" "}
-                <button onClick={this.addSecondaryVPsC2}>+</button>
-                <button onClick={this.removeSecondaryVPsC2}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryC3}{" "}
-                <button onClick={this.addSecondaryVPsC3}>+</button>
-                <button onClick={this.removeSecondaryVPsC3}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryC4}{" "}
-                <button onClick={this.addSecondaryVPsC4}>+</button>
-                <button onClick={this.removeSecondaryVPsC4}>-</button>
-              </td>
-              <td>
-                {this.state.secondaryC5}{" "}
-                <button onClick={this.addSecondaryVPsC5}>+</button>
-                <button onClick={this.removeSecondaryVPsC}>-</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td>{this.state.total1}</td>
-              <td>{this.state.total2}</td>
-              <td>{this.state.total3}</td>
-              <td>{this.state.total4}</td>
-              <td>{this.state.total5}</td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="playerOneBox">
+        <div>
+          <h2>Player One</h2>
+        </div>
+        <div>Turn 1</div>
+        <div>Turn 2</div>
+        <div>Turn 3</div>
+        <div>Turn 4</div>
+        <div>Turn 5</div>
+
+        <div>Primary</div>
+        <div>
+          {this.state.primary1}{" "}
+          {/* <button onClick={this.addPrimaryVPs1}>+</button>
+                <button onClick={this.removePrimaryVPs1}>-</button> */}
+        </div>
+        <div>
+          {this.state.primary2} <button onClick={this.addPrimaryVPs2}>+</button>
+          <button onClick={this.removePrimaryVPs2}>-</button>
+        </div>
+        <div>
+          {this.state.primary3} <button onClick={this.addPrimaryVPs3}>+</button>
+          <button onClick={this.removePrimaryVPs3}>-</button>
+        </div>
+        <div>
+          {this.state.primary4} <button onClick={this.addPrimaryVPs4}>+</button>
+          <button onClick={this.removePrimaryVPs4}>-</button>
+        </div>
+        <div>
+          {this.state.primary5} <button onClick={this.addPrimaryVPs5}>+</button>
+          <button onClick={this.removePrimaryVPs5}>-</button>
+        </div>
+
+        <div>
+          <select>
+            <option selected disabled>
+              Choose Your Secondary
+            </option>
+            <option disabled>--Battlefield Supremacy--</option>
+            <option>Engage On All Fronts</option>
+            <option>Linebreaker</option>
+            <option>Domination</option>
+            <option disabled>--No Mercy, No Respite--</option>
+            <option>Thin Their Ranks</option>
+            <option>Grind Them Down</option>
+            <option>While We Stand, We Fight</option>
+            <option disabled>--Purge The Enemy--</option>
+            <option>Titan Hunter</option>
+            <option>Bring It Down</option>
+            <option>Cut Off The Head</option>
+            <option>Assassinate</option>
+            <option disabled>--Shadow Operations--</option>
+            <option>Raise The Banners High</option>
+            <option>Investigate Sites</option>
+            <option>Deply Scramblers</option>
+            <option>Teleport Homer</option>
+            <option disabled>--Warpcraft--</option>
+            <option>Abhor The Witch</option>
+            <option>Mental Interrogation</option>
+            <option>Psychic Ritual</option>
+            <option>Pierce The Veil</option>
+          </select>
+        </div>
+        <div>
+          {this.state.secondaryA1}{" "}
+          <button onClick={this.addSecondaryVPsA1}>+</button>
+          <button onClick={this.removeSecondaryVPsA1}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryA2}{" "}
+          <button onClick={this.addSecondaryVPsA2}>+</button>
+          <button onClick={this.removeSecondaryVPsA2}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryA3}{" "}
+          <button onClick={this.addSecondaryVPsA3}>+</button>
+          <button onClick={this.removeSecondaryVPsA3}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryA4}{" "}
+          <button onClick={this.addSecondaryVPsA4}>+</button>
+          <button onClick={this.removeSecondaryVPsA4}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryA5}{" "}
+          <button onClick={this.addSecondaryVPsA5}>+</button>
+          <button onClick={this.removeSecondaryVPsA5}>-</button>
+        </div>
+
+        <div>
+          <select>
+            <option selected disabled>
+              Choose Your Secondary
+            </option>
+            <option disabled>--Battlefield Supremacy--</option>
+            <option>Engage On All Fronts</option>
+            <option>Linebreaker</option>
+            <option>Domination</option>
+            <option disabled>--No Mercy, No Respite--</option>
+            <option>Thin Their Ranks</option>
+            <option>Grind Them Down</option>
+            <option>While We Stand, We Fight</option>
+            <option disabled>--Purge The Enemy--</option>
+            <option>Titan Hunter</option>
+            <option>Bring It Down</option>
+            <option>Cut Off The Head</option>
+            <option>Assassinate</option>
+            <option disabled>--Shadow Operations--</option>
+            <option>Raise The Banners High</option>
+            <option>Investigate Sites</option>
+            <option>Deply Scramblers</option>
+            <option>Teleport Homer</option>
+            <option disabled>--Warpcraft--</option>
+            <option>Abhor The Witch</option>
+            <option>Mental Interrogation</option>
+            <option>Psychic Ritual</option>
+            <option>Pierce The Veil</option>
+          </select>
+        </div>
+        <div>
+          {this.state.secondaryB1}{" "}
+          <button onClick={this.addSecondaryVPsB1}>+</button>
+          <button onClick={this.removeSecondaryVPsB1}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryB2}{" "}
+          <button onClick={this.addSecondaryVPsB2}>+</button>
+          <button onClick={this.removeSecondaryVPsB2}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryB3}{" "}
+          <button onClick={this.addSecondaryVPsB3}>+</button>
+          <button onClick={this.removeSecondaryVPsB3}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryB4}{" "}
+          <button onClick={this.addSecondaryVPsB4}>+</button>
+          <button onClick={this.removeSecondaryVPsB4}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryB5}{" "}
+          <button onClick={this.addSecondaryVPsB5}>+</button>
+          <button onClick={this.removeSecondaryVPsB5}>-</button>
+        </div>
+
+        <div>
+          <select>
+            <option selected disabled>
+              Choose Your Secondary
+            </option>
+            <option disabled>--Battlefield Supremacy--</option>
+            <option>Engage On All Fronts</option>
+            <option>Linebreaker</option>
+            <option>Domination</option>
+            <option disabled>--No Mercy, No Respite--</option>
+            <option>Thin Their Ranks</option>
+            <option>Grind Them Down</option>
+            <option>While We Stand, We Fight</option>
+            <option disabled>--Purge The Enemy--</option>
+            <option>Titan Hunter</option>
+            <option>Bring It Down</option>
+            <option>Cut Off The Head</option>
+            <option>Assassinate</option>
+            <option disabled>--Shadow Operations--</option>
+            <option>Raise The Banners High</option>
+            <option>Investigate Sites</option>
+            <option>Deply Scramblers</option>
+            <option>Teleport Homer</option>
+            <option disabled>--Warpcraft--</option>
+            <option>Abhor The Witch</option>
+            <option>Mental Interrogation</option>
+            <option>Psychic Ritual</option>
+            <option>Pierce The Veil</option>
+          </select>
+        </div>
+        <div>
+          {this.state.secondaryC1}{" "}
+          <button onClick={this.addSecondaryVPsC1}>+</button>
+          <button onClick={this.removeSecondaryVPsC1}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryC2}{" "}
+          <button onClick={this.addSecondaryVPsC2}>+</button>
+          <button onClick={this.removeSecondaryVPsC2}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryC3}{" "}
+          <button onClick={this.addSecondaryVPsC3}>+</button>
+          <button onClick={this.removeSecondaryVPsC3}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryC4}{" "}
+          <button onClick={this.addSecondaryVPsC4}>+</button>
+          <button onClick={this.removeSecondaryVPsC4}>-</button>
+        </div>
+        <div>
+          {this.state.secondaryC5}{" "}
+          <button onClick={this.addSecondaryVPsC5}>+</button>
+          <button onClick={this.removeSecondaryVPsC5}>-</button>
+        </div>
+
+        <div>Total</div>
+        <div>{this.state.total1}</div>
+        <div>{this.state.total2}</div>
+        <div>{this.state.total3}</div>
+        <div>{this.state.total4}</div>
+        <div>{this.state.total5}</div>
       </div>
     );
   }

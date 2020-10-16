@@ -1,0 +1,17 @@
+.playerOneBox {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.topRowP1 {
+  border: 5px solid;
+  border-color: crimson;
+  background-color: aqua;
+  column-span: 2;
+}
+
+td,
+tr {
+  border: 1px, solid;
+  border-color: black;
+}
