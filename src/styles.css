@@ -1,17 +1,17 @@
 .playerOneBox {
   display: grid;
   grid-template-columns: repeat(6, auto);
+  background-image: url("/40k_wallpaper.jpg");
+  background-size: cover;
 }
 
-.topRowP1 {
-  border: 5px solid;
-  border-color: crimson;
+.pointBox {
+  border: 2px solid black;
+  margin: 2px;
+  height: 45px;
+  text-align: center;
+}
+
+.App {
   background-color: aqua;
-  column-span: 2;
-}
-
-td,
-tr {
-  border: 1px, solid;
-  border-color: black;
 }

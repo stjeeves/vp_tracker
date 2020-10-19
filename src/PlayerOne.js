@@ -441,39 +441,39 @@ class PlayerOne extends Component {
   render() {
     return (
       <div className="playerOneBox">
-        <div>
-          <h2>Player One</h2>
+        <div className="pointBox">
+          Player One
         </div>
-        <div>Turn 1</div>
-        <div>Turn 2</div>
-        <div>Turn 3</div>
-        <div>Turn 4</div>
-        <div>Turn 5</div>
+        <div className="pointBox">Turn 1</div>
+        <div className="pointBox">Turn 2</div>
+        <div className="pointBox">Turn 3</div>
+        <div className="pointBox">Turn 4</div>
+        <div className="pointBox">Turn 5</div>
 
-        <div>Primary</div>
-        <div>
+        <div className="pointBox">Primary</div>
+        <div className="pointBox">
           {this.state.primary1}{" "}
           {/* <button onClick={this.addPrimaryVPs1}>+</button>
                 <button onClick={this.removePrimaryVPs1}>-</button> */}
         </div>
-        <div>
-          {this.state.primary2} <button onClick={this.addPrimaryVPs2}>+</button>
+        <div className="pointBox">
+          {this.state.primary2}<br></br> <button onClick={this.addPrimaryVPs2}>+</button>
           <button onClick={this.removePrimaryVPs2}>-</button>
         </div>
-        <div>
-          {this.state.primary3} <button onClick={this.addPrimaryVPs3}>+</button>
+        <div className="pointBox">
+          {this.state.primary3}<br></br> <button onClick={this.addPrimaryVPs3}>+</button>
           <button onClick={this.removePrimaryVPs3}>-</button>
         </div>
-        <div>
-          {this.state.primary4} <button onClick={this.addPrimaryVPs4}>+</button>
+        <div className="pointBox">
+          {this.state.primary4} <br></br><button onClick={this.addPrimaryVPs4}>+</button>
           <button onClick={this.removePrimaryVPs4}>-</button>
         </div>
-        <div>
-          {this.state.primary5} <button onClick={this.addPrimaryVPs5}>+</button>
+        <div className="pointBox">
+          {this.state.primary5}<br></br> <button onClick={this.addPrimaryVPs5}>+</button>
           <button onClick={this.removePrimaryVPs5}>-</button>
         </div>
 
-        <div>
+        <div className="pointBox">
           <select>
             <option selected disabled>
               Choose Your Secondary
@@ -503,33 +503,33 @@ class PlayerOne extends Component {
             <option>Pierce The Veil</option>
           </select>
         </div>
-        <div>
-          {this.state.secondaryA1}{" "}
+        <div className="pointBox">
+          {this.state.secondaryA1}{" "}<br></br>
           <button onClick={this.addSecondaryVPsA1}>+</button>
           <button onClick={this.removeSecondaryVPsA1}>-</button>
         </div>
-        <div>
-          {this.state.secondaryA2}{" "}
+        <div className="pointBox">
+          {this.state.secondaryA2}{" "}<br></br>
           <button onClick={this.addSecondaryVPsA2}>+</button>
           <button onClick={this.removeSecondaryVPsA2}>-</button>
         </div>
-        <div>
-          {this.state.secondaryA3}{" "}
+        <div className="pointBox">
+          {this.state.secondaryA3}{" "}<br></br>
           <button onClick={this.addSecondaryVPsA3}>+</button>
           <button onClick={this.removeSecondaryVPsA3}>-</button>
         </div>
-        <div>
-          {this.state.secondaryA4}{" "}
+        <div className="pointBox">
+          {this.state.secondaryA4}{" "}<br></br>
           <button onClick={this.addSecondaryVPsA4}>+</button>
           <button onClick={this.removeSecondaryVPsA4}>-</button>
         </div>
-        <div>
-          {this.state.secondaryA5}{" "}
+        <div className="pointBox">
+          {this.state.secondaryA5}{" "}<br></br>
           <button onClick={this.addSecondaryVPsA5}>+</button>
           <button onClick={this.removeSecondaryVPsA5}>-</button>
         </div>
 
-        <div>
+        <div className="pointBox">
           <select>
             <option selected disabled>
               Choose Your Secondary
@@ -559,33 +559,33 @@ class PlayerOne extends Component {
             <option>Pierce The Veil</option>
           </select>
         </div>
-        <div>
-          {this.state.secondaryB1}{" "}
+        <div className="pointBox">
+          {this.state.secondaryB1}{" "}<br></br>
           <button onClick={this.addSecondaryVPsB1}>+</button>
           <button onClick={this.removeSecondaryVPsB1}>-</button>
         </div>
-        <div>
-          {this.state.secondaryB2}{" "}
+        <div className="pointBox">
+          {this.state.secondaryB2}{" "}<br></br>
           <button onClick={this.addSecondaryVPsB2}>+</button>
           <button onClick={this.removeSecondaryVPsB2}>-</button>
         </div>
-        <div>
-          {this.state.secondaryB3}{" "}
+        <div className="pointBox">
+          {this.state.secondaryB3}{" "}<br></br>
           <button onClick={this.addSecondaryVPsB3}>+</button>
           <button onClick={this.removeSecondaryVPsB3}>-</button>
         </div>
-        <div>
-          {this.state.secondaryB4}{" "}
+        <div className="pointBox">
+          {this.state.secondaryB4}{" "}<br></br>
           <button onClick={this.addSecondaryVPsB4}>+</button>
           <button onClick={this.removeSecondaryVPsB4}>-</button>
         </div>
-        <div>
-          {this.state.secondaryB5}{" "}
+        <div className="pointBox">
+          {this.state.secondaryB5}{" "}<br></br>
           <button onClick={this.addSecondaryVPsB5}>+</button>
           <button onClick={this.removeSecondaryVPsB5}>-</button>
         </div>
 
-        <div>
+        <div className="pointBox">
           <select>
             <option selected disabled>
               Choose Your Secondary
@@ -615,38 +615,38 @@ class PlayerOne extends Component {
             <option>Pierce The Veil</option>
           </select>
         </div>
-        <div>
-          {this.state.secondaryC1}{" "}
+        <div className="pointBox">
+          {this.state.secondaryC1}{" "}<br></br>
           <button onClick={this.addSecondaryVPsC1}>+</button>
           <button onClick={this.removeSecondaryVPsC1}>-</button>
         </div>
-        <div>
-          {this.state.secondaryC2}{" "}
+        <div className="pointBox">
+          {this.state.secondaryC2}{" "}<br></br>
           <button onClick={this.addSecondaryVPsC2}>+</button>
           <button onClick={this.removeSecondaryVPsC2}>-</button>
         </div>
-        <div>
-          {this.state.secondaryC3}{" "}
+        <div className="pointBox">
+          {this.state.secondaryC3}{" "}<br></br>
           <button onClick={this.addSecondaryVPsC3}>+</button>
           <button onClick={this.removeSecondaryVPsC3}>-</button>
         </div>
-        <div>
-          {this.state.secondaryC4}{" "}
+        <div className="pointBox">
+          {this.state.secondaryC4}{" "}<br></br>
           <button onClick={this.addSecondaryVPsC4}>+</button>
           <button onClick={this.removeSecondaryVPsC4}>-</button>
         </div>
-        <div>
-          {this.state.secondaryC5}{" "}
+        <div className="pointBox">
+          {this.state.secondaryC5}{" "}<br></br>
           <button onClick={this.addSecondaryVPsC5}>+</button>
           <button onClick={this.removeSecondaryVPsC5}>-</button>
         </div>
 
-        <div>Total</div>
-        <div>{this.state.total1}</div>
-        <div>{this.state.total2}</div>
-        <div>{this.state.total3}</div>
-        <div>{this.state.total4}</div>
-        <div>{this.state.total5}</div>
+        <div className="pointBox">Total</div>
+        <div className="pointBox">{this.state.total1}</div>
+        <div className="pointBox">{this.state.total2}</div>
+        <div className="pointBox">{this.state.total3}</div>
+        <div className="pointBox">{this.state.total4}</div>
+        <div className="pointBox">{this.state.total5}</div>
       </div>
     );
   }
