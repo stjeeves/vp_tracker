@@ -441,40 +441,39 @@ class PlayerOne extends Component {
   render() {
     return (
       <div className="playerOneBox">
-        <div className="pointBox">
+        <div className="titleBox">
           Player One
         </div>
-        <div className="pointBox">Turn 1</div>
-        <div className="pointBox">Turn 2</div>
-        <div className="pointBox">Turn 3</div>
-        <div className="pointBox">Turn 4</div>
-        <div className="pointBox">Turn 5</div>
+        <div className="titleBox">Turn 1</div>
+        <div className="titleBox">Turn 2</div>
+        <div className="titleBox">Turn 3</div>
+        <div className="titleBox">Turn 4</div>
+        <div className="titleBox">Turn 5</div>
 
-        <div className="pointBox">Primary</div>
-        <div className="pointBox">
+        <div className="titleBox">Primary</div>
+        <div className="primaryOneBox">
           {this.state.primary1}{" "}
-          {/* <button onClick={this.addPrimaryVPs1}>+</button>
-                <button onClick={this.removePrimaryVPs1}>-</button> */}
+        
         </div>
         <div className="pointBox">
-          {this.state.primary2}<br></br> <button onClick={this.addPrimaryVPs2}>+</button>
-          <button onClick={this.removePrimaryVPs2}>-</button>
+          {this.state.primary2}<br></br> <button className="button" onClick={this.addPrimaryVPs2}>+</button>
+          <button className="button" onClick={this.removePrimaryVPs2}>-</button>
         </div>
         <div className="pointBox">
-          {this.state.primary3}<br></br> <button onClick={this.addPrimaryVPs3}>+</button>
-          <button onClick={this.removePrimaryVPs3}>-</button>
+          {this.state.primary3}<br></br> <button  className="button" onClick={this.addPrimaryVPs3}>+</button>
+          <button className="button" onClick={this.removePrimaryVPs3}>-</button>
         </div>
         <div className="pointBox">
-          {this.state.primary4} <br></br><button onClick={this.addPrimaryVPs4}>+</button>
-          <button onClick={this.removePrimaryVPs4}>-</button>
+          {this.state.primary4} <br></br><button  className="button" onClick={this.addPrimaryVPs4}>+</button>
+          <button className="button" onClick={this.removePrimaryVPs4}>-</button>
         </div>
         <div className="pointBox">
-          {this.state.primary5}<br></br> <button onClick={this.addPrimaryVPs5}>+</button>
-          <button onClick={this.removePrimaryVPs5}>-</button>
+          {this.state.primary5}<br></br> <button className="button" onClick={this.addPrimaryVPs5}>+</button>
+          <button className="button" onClick={this.removePrimaryVPs5}>-</button>
         </div>
 
-        <div className="pointBox">
-          <select>
+        <div className="dropdownBox">
+          <select className="dropdown">
             <option selected disabled>
               Choose Your Secondary
             </option>
@@ -505,32 +504,32 @@ class PlayerOne extends Component {
         </div>
         <div className="pointBox">
           {this.state.secondaryA1}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsA1}>+</button>
-          <button onClick={this.removeSecondaryVPsA1}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsA1}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsA1}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryA2}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsA2}>+</button>
-          <button onClick={this.removeSecondaryVPsA2}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsA2}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsA2}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryA3}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsA3}>+</button>
-          <button onClick={this.removeSecondaryVPsA3}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsA3}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsA3}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryA4}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsA4}>+</button>
-          <button onClick={this.removeSecondaryVPsA4}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsA4}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsA4}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryA5}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsA5}>+</button>
-          <button onClick={this.removeSecondaryVPsA5}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsA5}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsA5}>-</button>
         </div>
 
-        <div className="pointBox">
-          <select>
+        <div className="dropdownBox">
+          <select className="dropdown">
             <option selected disabled>
               Choose Your Secondary
             </option>
@@ -561,32 +560,32 @@ class PlayerOne extends Component {
         </div>
         <div className="pointBox">
           {this.state.secondaryB1}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsB1}>+</button>
-          <button onClick={this.removeSecondaryVPsB1}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsB1}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsB1}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryB2}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsB2}>+</button>
-          <button onClick={this.removeSecondaryVPsB2}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsB2}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsB2}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryB3}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsB3}>+</button>
-          <button onClick={this.removeSecondaryVPsB3}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsB3}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsB3}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryB4}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsB4}>+</button>
-          <button onClick={this.removeSecondaryVPsB4}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsB4}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsB4}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryB5}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsB5}>+</button>
-          <button onClick={this.removeSecondaryVPsB5}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsB5}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsB5}>-</button>
         </div>
 
-        <div className="pointBox">
-          <select>
+        <div className="dropdownBox">
+          <select className="dropdown">
             <option selected disabled>
               Choose Your Secondary
             </option>
@@ -617,36 +616,36 @@ class PlayerOne extends Component {
         </div>
         <div className="pointBox">
           {this.state.secondaryC1}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsC1}>+</button>
-          <button onClick={this.removeSecondaryVPsC1}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsC1}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsC1}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryC2}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsC2}>+</button>
-          <button onClick={this.removeSecondaryVPsC2}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsC2}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsC2}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryC3}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsC3}>+</button>
-          <button onClick={this.removeSecondaryVPsC3}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsC3}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsC3}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryC4}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsC4}>+</button>
-          <button onClick={this.removeSecondaryVPsC4}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsC4}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsC4}>-</button>
         </div>
         <div className="pointBox">
           {this.state.secondaryC5}{" "}<br></br>
-          <button onClick={this.addSecondaryVPsC5}>+</button>
-          <button onClick={this.removeSecondaryVPsC5}>-</button>
+          <button className="button" onClick={this.addSecondaryVPsC5}>+</button>
+          <button className="button" onClick={this.removeSecondaryVPsC5}>-</button>
         </div>
 
-        <div className="pointBox">Total</div>
-        <div className="pointBox">{this.state.total1}</div>
-        <div className="pointBox">{this.state.total2}</div>
-        <div className="pointBox">{this.state.total3}</div>
-        <div className="pointBox">{this.state.total4}</div>
-        <div className="pointBox">{this.state.total5}</div>
+        <div className="totalBox">Total</div>
+        <div className="totalBox">{this.state.total1}</div>
+        <div className="totalBox">{this.state.total2}</div>
+        <div className="totalBox">{this.state.total3}</div>
+        <div className="totalBox">{this.state.total4}</div>
+        <div className="totalBox">{this.state.total5}</div>
       </div>
     );
   }

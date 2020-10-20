@@ -1,8 +1,22 @@
+.App {
+  background-image: url("./40k_wallpaper.jpg");
+  background-size: cover;
+  background-position: fixed;
+  font-family: "Bebas Neue", cursive;
+}
+
 .playerOneBox {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  background-image: url("/40k_wallpaper.jpg");
-  background-size: cover;
+  grid-template-rows: repeat(6, auto);
+  padding: 50px;
+}
+
+.playerTwoBox {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
+  padding: 50px;
 }
 
 .pointBox {
@@ -10,8 +24,65 @@
   margin: 2px;
   height: 45px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: large;
 }
 
-.App {
-  background-color: aqua;
+.totalBox {
+  border: 2px solid black;
+  margin: 2px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: xx-large;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.titleBox {
+  border: 2px solid black;
+  margin: 2px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: xx-large;
+  text-align: center;
+}
+
+.dropdownBox {
+  border: 2px solid black;
+  margin: 2px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: xx-large;
+  text-align: center;
+}
+
+.primaryOneBox {
+  border: 2px solid black;
+  margin: 2px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: xx-large;
+  text-align: center;
+}
+
+.button {
+  border: 2px;
+  padding: 2px;
+  margin: 4px;
+  background-color: darkslategray;
+  color: white;
+  width: 2em;
+  outline: none;
+}
+
+.button:hover {
+  color: darkslategray;
+  background-color: white;
+}
+
+.dropdown {
+  background-color: darkslategray;
+  color: white;
+  outline: none;
 }

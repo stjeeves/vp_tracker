@@ -6,7 +6,7 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <h1>VP TRACKER</h1>
+      
       <PlayerOne></PlayerOne>
       <PlayerTwo></PlayerTwo>
     </div>
