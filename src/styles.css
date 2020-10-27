@@ -1,6 +1,7 @@
 .App {
-  background-image: url("./40k_wallpaper.jpg");
+  background-image: url("/40k_wallpaper.jpg/");
   background-size: cover;
+  background-color: grey;
   background-position: fixed;
   font-family: "Bebas Neue", cursive;
 }
@@ -25,7 +26,7 @@
   height: 45px;
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
-  font-size: large;
+  font-size: xx-large;
 }
 
 .totalBox {
